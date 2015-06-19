@@ -11,7 +11,7 @@ describe ReverseMarkdown do
   it { is_expected.to match /block"\)\n    console/ }
 
   context "with github style code blocks" do
-    subject { ReverseMarkdown.convert(input, github_flavored: true) }
+    subject { ReverseMarkdown.convert(input, :github_flavored => true) }
     it { is_expected.to match /inline `code` block/ }
     it { is_expected.to match /```\nvar this\;\nthis/ }
     it { is_expected.to match /it is"\) ?\n```/ }

@@ -1,16 +1,17 @@
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
+# require 'codeclimate-test-reporter'
+# CodeClimate::TestReporter.start
 
-require 'simplecov'
-# require 'byebug'
+# require 'simplecov'
+# # require 'byebug'
 
-SimpleCov.profiles.define 'gem' do
-  add_filter '/spec/'
-  add_filter '/autotest/'
-  add_group 'Libraries', '/lib/'
-end
-SimpleCov.start 'gem'
+# SimpleCov.profiles.define 'gem' do
+#   add_filter '/spec/'
+#   add_filter '/autotest/'
+#   add_group 'Libraries', '/lib/'
+# end
+# SimpleCov.start 'gem'
 
+require 'ruby-debug'
 require 'reverse_markdown'
 
 RSpec.configure do |config|

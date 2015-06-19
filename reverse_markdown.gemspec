@@ -24,6 +24,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'redcarpet', '= 2.2.2'
-  # s.add_development_dependency 'byebug'
+  s.add_development_dependency 'ruby-debug'
   # s.add_development_dependency 'codeclimate-test-reporter'
 end
